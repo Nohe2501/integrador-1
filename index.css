@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'delius';
+    src:url(/fuentes/Delius/Delius-Regular.ttf);
+    font-style: italic;
+    font-weight:400;
+  }
+body{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    text-align: center;
+    background-color: #5ec4b6;
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+}
+header{
+    background: #facee1;
+    height: 120px;
+    margin: 0px;
+    font-style: italic;
+    font-weight:400;
+}
+
+
+section{
+    margin: 50px;
+}
+
+footer{
+    background-color: #facee1;
+    height:60px;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+footer p{
+
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin: 5px;
+}
+
+figure{
+    margin: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+figcaption{
+    display: none;
+    background: #facee1;
+    position:absolute;  
+    left: 0px;
+    top: 0px;
+    width: 90%;
+    padding: 5%;
+    overflow: hidden;
+    font-size: 18px;
+    opacity: 0.8;
+    text-align: justify;
+    color: #000;
+}
+
+figure:hover figcaption{
+    display: block;
+}
+
+.menu{
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background: #5ec4b6;
+    border: none;
+    color: white;
+    margin: 30px;
+    margin-top: 38px;
+    cursor: pointer; /*hace que al posicionarse sobre el botón cambie el cursor a una manito */
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 13px;
+    margin-left: 20px;
+}
+
+.links{
+    background: #f9f9f9;
+    width: 185px;
+    display: none; /*no muestra el menú hasta que el cursor está sobre el botón*/
+}
+
+/* Con esta propiedad le damos diseño a los botones cuando colocamos el cursor sobre los mismos*/
+.links a:hover{
+    background: #f05d9b;
+    color: white;
+}
+
+.desplegable{
+    position: absolute;/* Usamos esta propiedad para que solo aparezca el menú exclusivamente cuando el cursor está encima */
+}
+
+/* Con esta propiedad hacemos que el menú desplegable aparezca solo cuando colocamos el cursor sobre el boton*/
+.desplegable:hover .links{
+    display: block;
+}
+
+
+.logo{
+    width: 115px;
+}
+
+.caja_logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre imágenes */
+    margin: 5px auto;
+}
+
+.imagenes img{
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    border: 1px solid #000;
+    gap: 20px;
+    border-radius: 15px;
+    border-style: none;
+
+}
+
+.precios{
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    color: #f05d9b;
+}
+
+.comprar{ 
+    padding: 10px;
+    border-radius: 10px;
+    background: #f05d9b;
+    border: none;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.comprar:hover{
+    background:#facee1;
+    color: black;
+}
