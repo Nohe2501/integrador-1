@@ -4,12 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+<header>
+   <!-- Estructura del menú principal -->
+    <div class="desplegable">
+       <button class="menu">Menú</button>
+       <div class="links">
+           <a href="index.html">Inicio</a>
+           <a href="nosotros.html">Nosotros</a>
+           <a href="contacto.html">Contacto</a>
+           <a href="alta-producto.html">Alta de Producto</a>
+       </div>
+    </div>
+    <div class="caja_logo">
+       <img class="logo" src="/imagenes/logo.png" alt="logo">
+    </div>
+    
+</header>
 <body>
 
-    <h1>
-        ESTA ES LA PAGINA DE CONTACTO.
-    </h1>
-    
+   <div class="barraBuscar">
+       <form action="">
+           <input type="text"
+           placeholder="Buscar">
+           <button class="buscar">Buscar</button>
+        </form>
+    </div>
+   <section class="formulario">
+      <h1>
+         Contacto
+      </h1>
+   <div class="formubb">
+      <!-- <form action="" method=""> -->
+         <!-- label: info para el user -->
+         <label for="nombre">Nombre: </label>
+         <input 
+         type="text" 
+         minlength="3" 
+         maxlength="10" 
+         placeholder="Escriba su nombre" 
+         required>
+   </div>
+   <div class="formubb">
+      <label for="edad">Edad:</label>
+      <input 
+      type="number" 
+      min="0" 
+      max="100" 
+      placeholder="entre 0 y 100" 
+      required>
+     </div>
+   <div class="formubb">
+      <label for="email">Email: </label>
+      <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="pepe@gmail.com"
+          pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+          required
+          >
+    </div> 
+    <div class="formubb">
+      <label for="comentarios">Comentarios: </label>
+      <input 
+      type="text"
+      minlength="5" 
+      maxlength="30" 
+      placeholder="Escriba un breve comentario"
+      >
+    </div>
+
+   </section>
 </body>
+<footer>
+   <p>¡Despues de probarlos no podras dejar de comerlos!</p>
+   <p>© Nohely Díaz</p>
+</footer>
 </html>

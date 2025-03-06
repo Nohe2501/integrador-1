@@ -4,12 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta de producto</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+<header>
+    <!-- Estructura del menú principal -->
+     <div class="desplegable">
+        <button class="menu">Menú</button>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="alta-producto.html">Alta de Producto</a>
+        </div>
+     </div>
+     <div class="caja_logo">
+        <img class="logo" src="/imagenes/logo.png" alt="logo">
+     </div>
+     
+</header>
 <body>
 
-    <h1>
-        ESTA ES LA PAGINA ALTA DE PRODUCTO.
-    </h1>
+    <div class="barraBuscar">
+        <form action="">
+            <input type="text"
+            placeholder="Buscar">
+            <button class="buscar">Buscar</button>
+         </form>
+     </div>
+
+    <section class="formuAltaMayor">
+        <h1>
+            Alta de Producto
+        </h1>
+        <div class="formuAlta">
+            <label for="nombre">Nombre producto: </label>
+            <input 
+            type="text" 
+            minlength="5" 
+            maxlength="10" 
+            placeholder="Producto" 
+            required>
+        </div>
+        <div class="formuAlta">
+            <label for="precio">Precio: </label>
+            <input 
+            type="number" 
+            min="0" 
+            max="18000" 
+            placeholder="$$$$$" 
+            required>
+
+        </div>
+        <div class="formuAlta">
+            <label for="stock">Stock: </label>
+            <input 
+            type="number" 
+            min="0" 
+            max="100" 
+            placeholder="Cantidad" 
+            required>
+        </div>
+        <div class="formuAlta">
+            <label for="marca">Marca: </label>
+            <input 
+            type="text" 
+            minlength="5" 
+            maxlength="20" 
+            placeholder="" 
+            required>
+        </div>
+        <div class="formuAlta">
+            <label for="categoria">Categoria: </label>
+            <input 
+            type="text" 
+            minlength="5" 
+            maxlength="20" 
+            placeholder="" 
+            required>
+        </div>
+        <div class="formuAlta">
+            <label for="Descripcion corta">Descripción corta: </label>
+            <input 
+            type="text" 
+            minlength="5" 
+            maxlength="20" 
+            placeholder="" 
+            required>
+        </div>
+        <div class="formuAlta">
+            <label for="Descripcion larga">Descripción larga: </label>
+            <textarea>
+            </textarea>
+        </div>
+        <div class="formuAlta">
+            <label for="Envio sin cargo">Envio sin cargo: </label>
+            <input 
+            type="text" 
+            minlength="5" 
+            maxlength="40" 
+            placeholder="" 
+            required>
+        </div>
+        <div class="formuAlta">
+            <label for="carga de imagen">Ingresa la imagen del producto: </label>
+            <input
+            type="file"
+            required>
+        </div>
+
+    </section>
     
 </body>
+<footer>
+    <p>¡Despues de probarlos no podras dejar de comerlos!</p>
+    <p>© Nohely Díaz</p>
+</footer>
 </html>

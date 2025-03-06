@@ -4,10 +4,17 @@
     font-style: italic;
     font-weight:400;
   }
+
+html{
+    min-height: 100%;
+    position: relative;
+}
 body{
 
     margin: 0px;
+    margin-bottom: 150px;
     padding: 0px;
+
 }
 
 h2{
@@ -16,7 +23,7 @@ h2{
     color: white;
     padding: 5px;
     font-size: 22px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 header{
     background: #facee1;
@@ -24,18 +31,43 @@ header{
     margin: 0px;
     font-style: italic;
     font-weight:400;
+
 }
 
+.barraBuscar{
+
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+input{
+    height: 25px;
+    width: 250px;
+    font-size: 15px;
+}
+
+.buscar{
+    font-size: 15px;
+    padding: 6px;
+    background: #5ec4b6;
+    border: none;
+    color: white;
+}
 
 section{
     margin: 50px;
 }
 
 footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #facee1;
     height:60px;
-    padding-top:15px;
-    padding-bottom: 15px;
+    padding-top:30px;
+    padding-bottom: 30px;
+
 }
 
 footer p{
@@ -48,9 +80,15 @@ footer p{
 }
 
 figure{
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 30px;
+    padding-bottom: 10px;
     display: inline-block;
     position: relative;
+    background:#d2e9e5;
+    border-radius: 15px;
 }
 
 figcaption{
@@ -90,22 +128,30 @@ figure:hover figcaption{
     display: block;
     padding: 13px;
     margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+ 
 }
 
 .links{
     background: #f9f9f9;
     width: 185px;
     display: none; /*no muestra el menú hasta que el cursor está sobre el botón*/
+    
+
 }
 
 /* Con esta propiedad le damos diseño a los botones cuando colocamos el cursor sobre los mismos*/
 .links a:hover{
     background: #f05d9b;
     color: white;
+    
 }
 
 .desplegable{
     position: absolute;/* Usamos esta propiedad para que solo aparezca el menú exclusivamente cuando el cursor está encima */
+    z-index: 999;
+    flex:1;
 }
 
 /* Con esta propiedad hacemos que el menú desplegable aparezca solo cuando colocamos el cursor sobre el boton*/
@@ -116,6 +162,7 @@ figure:hover figcaption{
 
 .logo{
     width: 115px;
+
 }
 
 .caja_logo{
@@ -123,19 +170,21 @@ figure:hover figcaption{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .imagenes{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espacio entre imágenes */
+    /* gap: 20px; Espacio entre imágenes */
     margin: 5px auto;
+    
 }
 
 .imagenes img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: auto;
     max-width: 100%;
     border: 1px solid #000;
     gap: 20px;
@@ -164,4 +213,89 @@ figure:hover figcaption{
 .comprar:hover{
     background:#facee1;
     color: black;
+}
+
+/*---------------------------------------------------------------------*/
+
+.bum{
+    margin: 30px;
+    padding: 0px;
+    font-style:normal;
+    font-weight:400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #5ec4b6;
+}
+
+.nosotros{
+    font-size: 25px;
+    color: #f05d9b;
+    text-align: center;
+}
+
+.cajita{
+    border-radius: 30px;
+    margin: 20px;
+    background-color: #dffffb;
+    width: 60%;
+    height: 20%;
+    font-size: 20px;
+    padding: 30px;
+    color: rgba(71, 67, 67, 0.683);
+}
+
+/*---------------------------------------------------------------------*/
+
+.formulario{
+    font-style: italic;
+    font-weight:900;
+    font-size: 20px;
+    margin: 60px;
+    border-radius: 50px;
+    text-align: center;
+    color: #15af9a;
+    background:#fcefef;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    max-height: 100%;
+
+}
+
+.formubb{
+
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formuAltaMayor{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#fcefef;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    max-height: 100%;
+    border-radius: 50px;
+
+}
+
+.formuAlta{
+    margin: 15px;
+    justify-content: center;
+    font-style: italic;
+    font-weight:400;
+    font-size: 20px;
+    color: #15af9a;
+    font-weight: 900;
 }
